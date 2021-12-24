@@ -1,0 +1,77 @@
+{
+  "name": "ProgressBar",
+  "icon": "example-thumbnail.png",
+  "displayName": {
+    "en": "ProgressBar",
+    "ja": "プラグイン名"
+  },
+  "defaultWidth": 155,
+  "defaultHeight": 44,
+  "minWidth": 100,
+  "props": [
+    {
+      "name": "progressValue",
+      "displayName": {
+        "en": "value",
+        "ja": "value"
+      },
+      "type": "number",
+      "default": 20
+    },
+    {
+      "name": "maxValue",
+      "displayName": {
+        "en": "max value",
+        "ja": "max value"
+      },
+      "type": "number",
+      "default": 100
+    },
+
+    {
+      "name": "primaryColor",
+      "displayName": {
+        "en": "Button Color",
+        "ja": "Button Color"
+      },
+      "type": "color",
+      "default": "@primary"
+    },
+    {
+      "name": "contrastColor",
+      "displayName": {
+        "en": "Icon & Text Color",
+        "ja": "アイコンの色"
+      },
+      "type": "color",
+      "default": "@contrast:primaryColor"
+    },
+
+    {
+      "name": "backgroundColor",
+      "type": "color",
+      "displayName": {
+        "en": "BackgroundColor",
+        "ja": "BackgroundColor"
+      },
+      "default": "#34A0DD"
+    },
+    {
+      "name": "color",
+      "type": "color",
+      "displayName": {
+        "en": "Text Color",
+        "ja": "Text Color"
+      },
+      "default": "#F9F9F9"
+    },
+    {
+      "name": "borderRadius",
+      "default": 22
+    },
+    {
+      "name": "fontFamily",
+      "default": "Roboto, sans-serif"
+    }
+  ]
+}
