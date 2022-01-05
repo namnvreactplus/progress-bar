@@ -11,20 +11,34 @@ const Button = ({
   dataBinding = [],
   value,
 }) => {
-  // const {
-  //   type,
-  //   icon,
-  //   opacity,
-  //   backgroundColor,
-  //   fontSize,
-  //   color,
-  //   borderRadius,
-  //   text,
-  //   upperCase,
-  // } = attributes;
-  console.log("attributes", attributes);
+  const {
+    type,
+    icon,
+    opacity,
+    backgroundColor,
+    fontSize,
+    color,
+    borderRadius,
+    text,
+    upperCase,
+    maxValue,
+    progressValue,
+    defaultHeight,
+  } = attributes;
+  // console.log("attributes", attributes);
 
-  return <ProgressBar progress={0.5} color={Colors.red800} />;
+  let progress = 0.5;
+  if (!isNaN(+progressValue) && !isNaN(+maxValue)) {
+    progress = +progressValue / +maxValue;
+  }
+
+  return (
+    <ProgressBar
+      style={{ height }}
+      progress={progress}
+      color={backgroundColor}
+    />
+  );
 };
 
 export default Button;
